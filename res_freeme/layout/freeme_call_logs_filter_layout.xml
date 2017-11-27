@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/freeme_calllog_filter_bg"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/call_logs_all"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/freeme_call_logs_filter_layout_height"
+        android:layout_weight="1"
+        android:background="@drawable/freeme_calllogs_filter_item_bg_left"
+        android:gravity="center"
+        android:text="@string/freeme_call_logs_filter_all"
+        android:textColor="@color/freeme_calllogs_filter_text_color" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="@dimen/freeme_call_logs_filter_layout_height"
+        android:background="@drawable/freeme_calllog_filter_item_divied" />
+
+    <TextView
+        android:id="@+id/call_logs_missed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/freeme_call_logs_filter_layout_height"
+        android:layout_weight="1"
+        android:background="@drawable/freeme_calllogs_filter_item_bg_center"
+        android:gravity="center"
+        android:text="@string/freeme_call_logs_filter_missed"
+        android:textColor="@color/freeme_calllogs_filter_text_color" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="@dimen/freeme_call_logs_filter_layout_height"
+        android:background="@drawable/freeme_calllog_filter_item_divied" />
+
+    <TextView
+        android:id="@+id/call_logs_outgoing"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/freeme_call_logs_filter_layout_height"
+        android:layout_weight="1"
+        android:background="@drawable/freeme_calllogs_filter_item_bg_center"
+        android:gravity="center"
+        android:text="@string/freeme_call_logs_filter_outgoing"
+        android:textColor="@color/freeme_calllogs_filter_text_color" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="@dimen/freeme_call_logs_filter_layout_height"
+        android:background="@drawable/freeme_calllog_filter_item_divied" />
+
+    <TextView
+        android:id="@+id/call_logs_incoming"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/freeme_call_logs_filter_layout_height"
+        android:layout_weight="1"
+        android:background="@drawable/freeme_calllogs_filter_item_bg_right"
+        android:gravity="center"
+        android:text="@string/freeme_call_logs_filter_incoming"
+        android:textColor="@color/freeme_calllogs_filter_text_color" />
+</LinearLayout>

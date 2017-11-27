@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="freeme_phone_setting">Others</string>
+    <string name="phone_vibrate">Vibrate on Connection</string>
+    <string name="phone_revice_vibrate">Vibrate when connected to the calling number</string>
+    <string name="phone_revice_no_vibrate">Vibrate when connected to the calling number</string>
+    <string name="reverse_silent">Turn-over to Mute</string>
+    <string name="reverse_silent_info">Turn over your phone to mute the ringing</string>
+    <string name="gradient_ringing_info">enlarge the ringing call gradually</string>
+    <string name="gradient_ringing_call">Gradient</string>
+    <string name="pocket_ring_mode_text">Pocket mode</string>
+    <string name="pocket_ring_mode_info">The bell volume increase When a device is located in the pocket</string>
+    <string name="delete_from_call_log_list">Delete from call log list</string>
+    <plurals name="freeme_contacts_deleted_toast">
+        <item quantity="one">Contact deleted</item>
+        <item quantity="other">Contacts deleted</item>
+    </plurals>
+    <string name="freeme_contact_edit_permission_denied">Couldn\'t save contact changes.</string>
+    <string name="freeme_multiple_contact_delete_confirmation">Deleting this contact will delete details from multiple accounts.</string>
+    <string name="freeme_contact_delete_confirmation">Delete this contact?</string>
+    <string name="freeme_contact_delete_positive_button">Delete</string>
+    <string name="freeme_readonly_contact_delete_warning">Contacts from your read-only accounts cannot be deleted, but they can be hidden.</string>
+    <string name="freeme_readonly_contact_delete_positive_button">Hide</string>
+    <string name="freeme_readonly_contact_delete_confirmation">The contact to be deleted has details from multiple accounts. Details from read-only accounts will be hidden, not deleted.</string>
+    <string name="call_log_activity_title">History</string>
+    <string name="freemecallDetailsDurationFormat" translatable="false">"<xliff:g id="HOURS">%s</xliff:g>:<xliff:g id="MINUTES">%s</xliff:g>:<xliff:g id="SECONDS">%s</xliff:g> "</string>
+    <string name="multiple_delete">Delete history contact</string>
+    <string name="freeme_call_type_incoming">Incoming</string>
+    <string name="freeme_call_type_outgoing">Outgoing</string>
+    <string name="freeme_call_logs_filter_all">All</string>
+    <string name="freeme_call_logs_filter_missed">Missed</string>
+    <string name="freeme_call_logs_filter_outgoing">Outgoing</string>
+    <string name="freeme_call_logs_filter_incoming">Answered</string>
+    <string name="freeme_delete_contact">Delete contact</string>
+    <string name="freeme_default_ringtone_summary">Set default ringtone</string>
+    <string name="freeme_tab_call_label">Phone</string>
+    <string name="freeme_toast_call_delete_success">Delete call log successfully</string>
+    <string name="freeme_no_match_contact">Have no matched contacts</string>
+    <string name="freeme_call_log_incoming_empty">You have no incoming calls</string>
+    <string name="freeme_call_log_outgoing_empty">You have no outgoing calls</string>
+    <string name="freeme_call_log_missed_empty">"You have no missed calls"</string>
+    <string name="freeme_display_contacts_name">" Contacts"</string>
+    <string name="freeme_list_filter_customize">"Custom"</string>
+
+</resources>

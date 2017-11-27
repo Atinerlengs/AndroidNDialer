@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="freeme_call_detail_action_btn_text_color">#171717</color>
+    <color name="call_log_item_title_color">@color/title_text_color</color>
+    <color name="title_text_color">#333333</color>
+    <color name="missed_call_color">#ed5137</color>
+    <color name="sub_title_text_color">#999999</color>
+</resources>

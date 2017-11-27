@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <com.android.incallui.GlowPadWrapper xmlns:dc="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/glow_pad_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:focusable="true"
+            android:gravity="center"
+
+            dc:allowScaling="true"
+            dc:directionDescriptions="@array/incoming_call_widget_audio_with_sms_direction_descriptions"
+            dc:feedbackCount="0"
+            dc:glowRadius="@dimen/glowpadview_glow_radius"
+            dc:handleDrawable="@drawable/freeme_incoming_call_default_photo"
+            dc:innerRadius="@dimen/glowpadview_inner_radius"
+            dc:outerRadius="@dimen/glowpadview_target_placement_radius"
+            dc:pointDrawable="@drawable/ic_lockscreen_glowdot"
+            dc:snapMargin="@dimen/glowpadview_snap_margin"
+            dc:targetDescriptions="@array/incoming_call_widget_audio_with_sms_target_descriptions"
+            dc:targetDrawables="@array/incoming_call_widget_audio_with_sms_targets"
+            dc:vibrationDuration="20" />
+
+        <FrameLayout
+            android:id="@+id/contact_photo_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="@dimen/freeme_incoming_call_contact_photo_bottom_padding"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/contact_photo_img"
+                android:layout_width="@dimen/freeme_incoming_call_contact_photo_size"
+                android:layout_height="@dimen/freeme_incoming_call_contact_photo_size"
+                android:layout_gravity="center" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingEnd="48dip"
+        android:paddingStart="48dip">
+
+        <TextView
+            android:id="@+id/mute_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:drawablePadding="8dip"
+            android:drawableTop="@drawable/freeme_incoming_call_mute_selector"
+            android:paddingBottom="32dip"
+            android:gravity="center"
+            android:text="@string/freeme_incoming_call_mute"
+            android:textColor="@color/freeme_incoming_call_fragment_btn_text_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/decline_via_text_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dip"
+            android:drawableTop="@drawable/freeme_incoming_call_decline_with_sms_selector"
+            android:paddingBottom="32dip"
+            android:gravity="center"
+            android:text="@string/freeme_incoming_call_decline_with_sms"
+            android:textColor="@color/freeme_incoming_call_fragment_btn_text_color"
+            android:textSize="13sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp">
+
+        <ImageView
+            android:id="@+id/incoming_call_decline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/freeme_incoming_call_decline_selector" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="59dp"
+            android:layout_marginStart="59dp"
+            android:minWidth="16dp">
+
+            <ImageView
+                android:id="@+id/incoming_call_answer_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/freeme_incoming_call_answer_video_selector" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/incoming_call_answer_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/freeme_incoming_call_answer_audio_selector" />
+    </LinearLayout>
+</RelativeLayout>

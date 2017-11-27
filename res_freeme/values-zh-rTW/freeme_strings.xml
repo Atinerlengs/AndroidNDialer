@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--freeme.zhangjunjian,2017-06-20 create -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="dialer_other_settings">其他设置</string>
+    <string name="phone_vibrate">接通震動</string>
+    <string name="phone_revice_vibrate">電話接通時手機震動</string>
+    <string name="phone_revice_no_vibrate">電話接通時手機震動</string>
+    <string name="reverse_silent">翻轉靜音</string>
+    <string name="reverse_silent_info">翻轉電話使來電靜音</string>
+    <string name="gradient_ringing_call">鈴聲漸變</string>
+    <string name="gradient_ringing_info">來電鈴聲逐步放大</string>
+    <string name="pocket_ring_mode_text">口袋模式</string>
+    <string name="pocket_ring_mode_info">當設備位于口袋中時鈴聲音量增加</string>
+    <string name="delete_from_call_log_list">從通話記錄中刪除</string>
+    <plurals name="freeme_contacts_deleted_toast">
+        <item quantity="one">聯繫人已刪除</item>
+        <item quantity="other">聯繫人已刪除</item>
+    </plurals>
+    <string name="freeme_contact_edit_permission_denied">無法儲存聯絡人變更。</string>
+    <string name="freeme_multiple_contact_delete_confirmation">如果刪除這個聯絡人，系統將一併刪除多個帳戶中的相關詳細資料。</string>
+    <string name="freeme_contact_delete_confirmation">確定要刪除這個聯絡人嗎？</string>
+    <string name="freeme_contact_delete_positive_button">刪除</string>
+    <string name="freeme_readonly_contact_delete_warning">系統無法刪除擷取自唯讀帳戶的聯絡人資料，但可以將這些資料設為隱藏。</string>
+    <string name="freeme_readonly_contact_delete_positive_button">隱藏</string>
+    <string name="freeme_readonly_contact_delete_confirmation">您要刪除的聯絡人詳細資料源自多個帳戶。針對擷取自唯讀帳戶的詳細資料，系統會予以隱藏，而不會刪除這些資料。</string>
+    <string name="call_log_activity_title">"通話紀錄"</string>
+    <string name="multiple_delete">刪除通話記錄</string>
+    <string name="freeme_call_type_incoming">呼入</string>
+    <string name="freeme_call_type_outgoing">呼出</string>
+    <string name="freeme_call_logs_filter_all">全部通話</string>
+    <string name="freeme_call_logs_filter_missed">未接來電</string>
+    <string name="freeme_call_logs_filter_outgoing">已撥電話</string>
+    <string name="freeme_call_logs_filter_incoming">已接來電</string>
+    <string name="freeme_delete_contact">刪除聯絡人</string>
+    <string name="freeme_default_ringtone_summary">設置默認的手機鈴聲</string>
+    <string name="freeme_tab_call_label">電話</string>
+    <string name="freeme_toast_call_delete_success">通話履歴删除成功</string>
+    <string name="freeme_no_match_contact">没有匹配的聯絡人</string>
+    <string name="freeme_call_log_incoming_empty">您没有任何已接來電</string>
+    <string name="freeme_call_log_outgoing_empty">您没有任何已撥電話</string>
+    <string name="freeme_call_log_missed_empty">"您沒有任何未接來電"</string>
+    <string name="freeme_display_contacts_name">"聯絡人"</string>
+    <string name="freeme_list_filter_customize">"自訂"</string>
+</resources>

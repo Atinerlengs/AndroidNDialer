@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/freeme_color_primary"
+    android:orientation="vertical">
+
+    <!--android:background="@drawable/freeme_dialer_tab_bg"-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@*freeme:dimen/action_bar_default_height_freeme"
+        android:layout_centerInParent="true">
+
+        <com.freeme.support.design.widget.FreemeTabLayout
+            xmlns:ft="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:duplicateParentState="true"
+            android:textSize="18sp"
+            ft:tab_selectedTextColor="@color/freeme_color_accent"
+            ft:tab_minWidth="70dp" />
+
+        <!--freeme.zhangjunjian,20170727,add attr android:maxEms="15"-->
+        <TextView
+            android:id="@+id/title_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="@string/dialerIconLabel"
+            android:paddingEnd="10dip"
+            android:paddingStart="10dip"
+            android:maxEms="15"
+            android:textColor="@color/freeme_color_accent"
+            android:textColorHint="@color/freeme_tab_title_text_color"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/freeme_tab_bottom_line_color" />
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/dialtacts_options_menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/freeme_actionbar_menu_icon_padding"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/freeme_menu_overflow_icon_selector" />
+
+    <ImageButton
+        android:id="@+id/dialtacts_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/freeme_actionbar_menu_icon_padding"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/freeme_back_img_selector"
+        android:visibility="gone" />
+</RelativeLayout>

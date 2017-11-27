@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="freeme_incoming_call_decline_with_sms">Message</string>
+    <string name="freeme_incoming_call_mute">Mute</string>
+    <string name="onscreenRecordNumberText">Record number</string>
+    <string name="toast_recordnumber_show">The number you entered will remain on diapad after call ends</string>
+    <string name="onscreenShowDialpadText">Dialpad</string>
+    <string name="freeme_hideVideoPreview">Hide my video</string>
+    <string name="freeme_showVideoPreview">Show my video</string>
+    <string name="freeme_onscreenChangeToVoiceText">Voice call</string>
+    <string name="freeme_onscreenSwitchCameraText">Switch camera</string>
+</resources>

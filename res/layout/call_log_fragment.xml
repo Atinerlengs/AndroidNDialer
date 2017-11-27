@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- Layout parameters are set programmatically. -->
+<!-- M:[Call Log Account Filter] adjust layourt for CallLog Filter @{ -->
+<!-- freeme.zhaozehong, 20170816. for freemeOS style
+    remove android:background="@color/background_dialer_call_log"
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="vertical"
+    android:showDividers="end"
+    >
+
+    <!-- M: [Call Log Account Filter] @{ -->
+    <TextView
+        android:id="@+id/notice_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calllog_account_filter_height"
+        android:layout_marginStart="@dimen/call_log_horizontal_margin"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/holo_blue_light"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/notice_text_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginEnd="@dimen/call_log_horizontal_margin"
+        android:layout_marginStart="@dimen/call_log_horizontal_margin"
+        android:background="@android:color/holo_blue_light"
+        android:visibility="gone" />
+    <!-- @} -->
+
+    <!-- @{freeme.zhaozehong, 18/07/17. for call log filter -->
+    <LinearLayout
+        android:id="@+id/call_log_filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/freeme_call_logs_filter_layout" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/freeme_list_divider_color" />
+    </LinearLayout>
+    <!-- @} -->
+
+    <!-- freeme.zhaozehong, 20170816. for freemeOS style
+        remove android:background="@color/background_dialer_call_log"
+    -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!-- @{freeme.zhaozehong, 03/07/17. for freemeOS
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_dialer_call_log"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/call_log_horizontal_margin"
+            android:paddingEnd="@dimen/call_log_horizontal_margin"
+            android:paddingBottom="@dimen/floating_action_button_list_bottom_padding" />
+        -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false" />
+        <!-- @} -->
+
+        <com.android.dialer.widget.EmptyContentView
+            android:id="@+id/empty_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>
+<!-- @} -->

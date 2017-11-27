@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="freeme_incoming_call_decline_with_sms">信息</string>
+    <string name="freeme_incoming_call_mute">静音</string>
+    <string name="onscreenRecordNumberText">记录号码</string>
+    <string name="toast_recordnumber_show">输入的号码将在电话结束后被保存在拨号盘上</string>
+    <string name="onscreenShowDialpadText">"拨号键盘"</string>
+    <string name="freeme_hideVideoPreview">隐藏窗口</string>
+    <string name="freeme_showVideoPreview">显示窗口</string>
+    <string name="freeme_onscreenChangeToVoiceText">语音通话</string>
+    <string name="freeme_onscreenSwitchCameraText">前后镜头</string>
+</resources>

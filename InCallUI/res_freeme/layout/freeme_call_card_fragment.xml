@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/incall_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/freeme_incallui_bg"
+        android:scaleType="centerCrop" />
+
+    <fragment
+        android:id="@+id/videoCallFragment"
+        android:name="com.android.incallui.VideoCallFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="start|center_vertical" />
+
+    <LinearLayout
+        android:id="@+id/primary_call_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.9"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:elevation="@dimen/primary_call_elevation"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/freeme_primary_call_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Secondary "Call info" block, for the background ("on hold") call. -->
+    <include layout="@layout/freeme_other_call_info"/>
+
+    <LinearLayout
+        android:id="@+id/end_and_dialpad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <fragment
+                android:id="@+id/callButtonFragment"
+                android:name="com.freeme.incallui.FreemeCallButtonFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/end_and_dialpad" />
+
+            <FrameLayout
+                android:id="@+id/dialpad_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="@dimen/dialpad_elevation" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_btn_layout"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/freeme_button_end_container_height"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/record_number_btn"
+                style="@style/InCallButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/onscreenRecordNumberText"
+                android:scaleType="center"
+                android:src="@drawable/freeme_call_card_record_number_btn_selector" />
+
+            <ImageButton
+                android:id="@+id/end_call_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/onscreenEndCallText"
+                android:scaleType="center"
+                android:src="@drawable/freeme_call_card_end_call_btn_selector" />
+
+            <ImageButton
+                android:id="@+id/dialpad_show_or_hide_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/onscreenShowDialpadText"
+                android:scaleType="center"
+                android:src="@drawable/freeme_call_card_dialpad_show_btn_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/end_and_dialpad">
+
+        <include layout="@layout/freeme_manage_conference_call_button" />
+    </FrameLayout>
+
+    <!-- Placeholder for the dialpad which is replaced with the dialpad fragment when shown. -->
+    <FrameLayout
+        android:id="@+id/answer_and_dialpad_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:elevation="@dimen/dialpad_elevation" />
+
+    <!-- Progress spinner, useful for indicating pending operations such as upgrade to video. -->
+    <FrameLayout
+        android:id="@+id/progressSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#63000000"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@android:style/Widget.Material.ProgressBar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/call_card_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Call context -->
+            <LinearLayout
+                android:id="@+id/contact_context"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/incall_background_color"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/contactContextTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/contact_context_title_margin_bottom"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/glowpad_background_color"
+                    android:textSize="@dimen/contact_context_title_text_size" />
+
+                <ListView
+                    android:id="@+id/contactContextInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:dividerHeight="@dimen/contact_context_list_item_padding" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+</RelativeLayout>

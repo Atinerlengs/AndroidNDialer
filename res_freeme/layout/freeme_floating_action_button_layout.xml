@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/floating_action_button_container"
+    android:layout_width="@dimen/floating_action_button_width"
+    android:layout_height="@dimen/floating_action_button_height"
+    android:layout_gravity="right|bottom"
+    android:layout_marginBottom="@dimen/floating_action_button_margin_bottom"
+    android:layout_marginEnd="25dp"
+    android:background="@drawable/freeme_floating_action_btn_bg"
+    app:layout_behavior="com.android.dialer.FloatingActionButtonBehavior">
+
+    <ImageButton
+        android:id="@+id/floating_action_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/floating_action_button"
+        android:contentDescription="@string/action_menu_dialpad_button"
+        android:src="@drawable/fab_ic_dial" />
+</FrameLayout>

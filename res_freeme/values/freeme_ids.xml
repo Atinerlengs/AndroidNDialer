@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="freeme_menu_item_call" />
+    <item type="id" name="freeme_menu_item_ipcall" />
+    <item type="id" name="freeme_menu_item_send_sms" />
+    <item type="id" name="freeme_menu_item_add_new_contact" />
+    <item type="id" name="freeme_menu_item_add_exist_contact" />
+    <item type="id" name="freeme_menu_item_delete_calllog" />
+    <item type="id" name="freeme_dialog_delete_contact_loader_id" />
+</resources>

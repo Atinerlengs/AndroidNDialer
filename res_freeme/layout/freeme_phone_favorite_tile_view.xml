@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_tile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingStart="@dimen/call_log_horizontal_margin">
+
+    <TextView
+        android:id="@+id/frequentTitleDivider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/freeme_list_space_height"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/call_log_start_margin"
+        android:text="@string/favoritesFrequentContacted"
+        android:textColor="@color/freeme_list_space_text_color"
+        android:textSize="@dimen/freeme_list_space_text_size" />
+
+    <RelativeLayout
+        android:id="@+id/speed_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/freeme_list_item_height"
+        android:layout_below="@id/frequentTitleDivider"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/call_log_outer_margin"
+        android:paddingStart="@dimen/call_log_start_margin">
+
+        <QuickContactBadge
+            android:id="@+id/contact_tile_image"
+            android:layout_width="@dimen/contact_photo_size"
+            android:layout_height="@dimen/contact_photo_size"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:nextFocusRight="@id/primary_action_view" />
+
+        <TextView
+            android:id="@+id/contact_tile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/call_log_list_item_info_margin_start"
+            android:layout_toEndOf="@id/contact_tile_image"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:fadingEdgeLength="3dip"
+            android:paddingEnd="50dp"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textColor="@color/freeme_calllog_title_color"
+            android:textSize="@dimen/call_log_primary_text_size" />
+
+        <ImageView
+            android:id="@+id/contact_star_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/freeme_contacts_star_no_icon"
+            android:tint="@color/freeme_contact_star_tint_color" />
+    </RelativeLayout>
+</RelativeLayout>

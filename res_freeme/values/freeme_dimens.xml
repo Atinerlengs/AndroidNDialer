@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="freeme_tab_bar_height">46dp</dimen>
+    <dimen name="freeme_call_detail_info_padding">16dp</dimen>
+    <dimen name="freeme_call_detail_info_padding_end">10dp</dimen>
+    <dimen name="freeme_call_detail_action_btn_text_size">17sp</dimen>
+    <dimen name="freeme_call_log_secondary_text_size">14sp</dimen>
+    <dimen name="freeme_call_detail_item_multi_line_height">68dp</dimen>
+    <dimen name="freeme_call_detail_item_one_line_height">48dp</dimen>
+    <dimen name="freeme_call_logs_filter_layout_height">28dp</dimen>
+    <dimen name="freeme_call_logs_item_margin">15dp</dimen>
+    <dimen name="freeme_call_logs_item_single_line_height">48dp</dimen>
+    <dimen name="freeme_call_logs_item_multi_line_height">68dp</dimen>
+    <dimen name="freeme_dialpad_action_layout_height">64dp</dimen>
+</resources>

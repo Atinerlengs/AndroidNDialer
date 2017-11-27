@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pinned_header_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/freeme_search_item"/>
+
+    <include layout="@layout/account_filter_header" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- PinnedHeaderListView maybe lead ListView stuck.
+            if happened, use FreemePinnedHeaderListView to avoid
+            class="com.freeme.contacts.common.widgets.FreemePinnedHeaderListView"
+        -->
+        <view
+            android:id="@android:id/list"
+            style="@style/DialtactsTheme"
+            class="com.freeme.contacts.common.widgets.FreemePinnedHeaderListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="?attr/contact_browser_list_padding_right"
+            android:layout_marginStart="?attr/contact_browser_list_padding_left"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:nestedScrollingEnabled="true" />
+
+        <com.freeme.contacts.common.widgets.FreemeIndexScrollView
+            android:id="@+id/index_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <com.android.dialer.widget.EmptyContentView
+            android:id="@+id/empty_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <include layout="@layout/freeme_floating_action_button_layout" />
+    </FrameLayout>
+</LinearLayout>

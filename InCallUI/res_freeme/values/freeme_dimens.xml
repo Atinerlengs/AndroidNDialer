@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <dimen name="freeme_incoming_call_contact_photo_size">64dp</dimen>
+    <dimen name="freeme_incoming_call_contact_photo_bottom_padding">70dp</dimen>
+    <dimen name="freeme_button_end_container_height">77dp</dimen>
+    <dimen name="freeme_incallui_dialpad_padding">40dp</dimen>
+    <dimen name="freeme_incallui_dialpad_height">243dp</dimen>
+    <dimen name="freeme_incallui_dialpad_edit_text_size">34dp</dimen>
+    <dimen name="freeme_call_button_height">162dp</dimen>
+    <dimen name="freeme_call_button_row_height">80dp</dimen>
+    <dimen name="freeme_call_button_record_icon_margin_top">8dp</dimen>
+    <dimen name="freeme_call_button_record_icon_margin_right">35dp</dimen>
+    <dimen name="freeme_incomming_call_call_card_top_padding">36dp</dimen>
+    <dimen name="freeme_incallui_contact_photo_size">64dp</dimen>
+    <dimen name="freeme_call_card_info_top_margin">80dp</dimen>
+    <dimen name="freeme_call_card_name_text_size">25sp</dimen>
+    <dimen name="freeme_call_card_label_text_size">13sp</dimen>
+    <dimen name="freeme_video_preview_top_margin">30dp</dimen>
+    <dimen name="freeme_video_preview_end_margin">20dp</dimen>
+    <dimen name="freeme_dialpad_width_in_landscape">400dp</dimen>
+    <dimen name="freeme_dialpad_height_in_landscape">200dp</dimen>
+    <dimen name="freeme_dialpad_height_in_portrait">220dp</dimen>
+    <dimen name="freeme_call_info_view_height">60dp</dimen>
+    <dimen name="freeme_secondary_call_info_horizontal_padding">24dp</dimen>
+    <dimen name="freeme_secondary_call_info_vertical_padding">3dp</dimen>
+    <dimen name="freeme_secondary_call_info_text_size">16sp</dimen>
+    <dimen name="freeme_conference_call_manager_padding_top">72dp</dimen>
+</resources>

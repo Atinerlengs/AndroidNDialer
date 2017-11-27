@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dtmf_twelve_key_dialer_view"
+    class="com.android.incallui.DialpadFragment$DialpadSlidingLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dialpad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/dialpad_title_edit"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/freeme_incallui_dialpad_padding"
+            android:layout_marginStart="@dimen/freeme_incallui_dialpad_padding"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/digits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="45dp"
+                android:layout_marginStart="45dp"
+                android:background="@null"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:freezesText="true"
+                android:gravity="center"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/freeme_incallui_dialpad_edit_text_color"
+                android:textColorHint="@color/freeme_incallui_dialpad_edit_text_color"
+                android:textSize="@dimen/freeme_incallui_dialpad_edit_text_size" />
+
+            <ImageButton
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:src="@drawable/freeme_incallui_dialpad_delete_selector"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TableLayout
+            android:id="@+id/dialpad"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/freeme_dialpad_height_in_portrait"
+            android:layoutDirection="ltr">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/one"
+                    style="@style/DialpadButtonStyle"
+                    android:src="@drawable/freeme_incallui_dialpad_num_1" />
+
+                <ImageButton
+                    android:id="@+id/two"
+                    style="@style/DialpadButtonStyle"
+                    android:src="@drawable/freeme_incallui_dialpad_num_2" />
+
+                <ImageButton
+                    android:id="@+id/three"
+                    style="@style/DialpadButtonStyle"
+                    android:src="@drawable/freeme_incallui_dialpad_num_3" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/four"
+                    style="@style/DialpadButtonStyle"
+                    android:src="@drawable/freeme_incallui_dialpad_num_4" />
+
+                <ImageButton
+                    android:id="@+id/five"
+                    style="@style/DialpadButtonStyle"
+                    android:src="@drawable/freeme_incallui_dialpad_num_5" />
+
+                <ImageButton
+                    android:id="@+id/six"
+                    style="@style/DialpadButtonStyle"
+                    android:src="@drawable/freeme_incallui_dialpad_num_6" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/seven"
+                    style="@style/DialpadButtonStyle"
+                    android:src="@drawable/freeme_incallui_dialpad_num_7" />
+
+                <ImageButton
+                    android:id="@+id/eight"
+                    style="@style/DialpadButtonStyle"
+                    android:src="@drawable/freeme_incallui_dialpad_num_8" />
+
+                <ImageButton
+                    android:id="@+id/nine"
+                    style="@style/DialpadButtonStyle"
+                    android:src="@drawable/freeme_incallui_dialpad_num_9" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/star"
+                    style="@style/DialpadButtonStyle"
+                    android:src="@drawable/freeme_incallui_dialpad_num_star" />
+
+                <ImageButton
+                    android:id="@+id/zero"
+                    style="@style/DialpadButtonStyle"
+                    android:src="@drawable/freeme_incallui_dialpad_num_0" />
+
+                <ImageButton
+                    android:id="@+id/pound"
+                    style="@style/DialpadButtonStyle"
+                    android:src="@drawable/freeme_incallui_dialpad_num_pound" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</view>
